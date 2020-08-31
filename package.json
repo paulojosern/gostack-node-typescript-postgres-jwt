@@ -7,7 +7,8 @@
     "build": "tsc",
     "dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "start": "ts-node src/index.js",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "test": "jest --passWithNoTests --silent --noStackTrace  --runInBand"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
